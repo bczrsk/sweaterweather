@@ -1,0 +1,92 @@
+/* Resetowanie marginesów i paddingu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030; /* Tło w jasnym odcieniu */
+    flex-direction: column;
+}
+
+.logo img {
+    max-width: 100%; /* Zmniejszenie logo do szerokości rodzica */
+    width: 300px; /* Maksymalna szerokość logo */
+    margin-bottom: 20px; /* Przerwa pod logo */
+}
+.card {
+    background: rgb(37, 37, 37);
+    padding: 20px;
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Przerwa między inputem a przyciskiem */
+}
+
+.search input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #000000;
+    border-radius: 25px; /* Okrągłe rogi inputu */
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #ffffff; /* Kolor obramowania przy focus */
+}
+
+.search button {
+    background-color: #222222; /* Niebieski kolor guzika */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50%; /* Okrągły guzik */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #000000; /* Ciemniejszy niebieski na hover */
+}
+
+.search button img {
+    width: 30px;
+    height: 30px;
+}
+
+.pogoda {
+    margin-top: 20px;
+}
+
+.pogoda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start; /* Ustawienie elementów po lewej stronie */
+}
+
+.pogoda-item img.icon {
+    width: 16px;  /* Ustawiamy małe ikony */
+    height: 16px;
+    margin-right: 10px; /* Odstęp między ikoną a tekstem */
+}
+
+.pogoda-item h2, .pogoda-item p {
+    margin: 0;
+    font-size: 16px;
+    display: inline-block; /* Aby tekst był obok ikony */
+    color: #ffffff; /* Kolor tekstu na biały */
+}
