@@ -6,7 +6,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/sweaterweather/",
-    "start_url": "/sweaterweather/",
+    "start_url": "/",
     "icons": [
         {
             "src": "ios/192.png",
