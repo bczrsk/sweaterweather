@@ -1,0 +1,25 @@
+{
+    "name": "Sweater Weather",
+    "short_name": "SWeather",
+    "theme_color": "#303030",
+    "background_color": "#303030",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "ios/192.png",
+            "sizes": "192x192"
+          },
+
+          {
+            "src": "ios/256.png",
+            "sizes": "256x256"
+          },
+          {
+            "src": "ios/512.png",
+            "sizes": "512x512"
+          }
+    ]
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweater Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name = "theme-color" content = #303030>
+</head>
+<body>
+    <div class="logo">
+        <img src="images/swlogo.png" alt="Logo">
+    </div>
+
+    <div class="card">
+        <div class="search">
+            <input id="miasto" type="text" placeholder="Wpisz nazwę miasta" spellcheck="false">
+            <button onclick="searchWeather()"><img src="images/search.png" alt="Szukaj"></button>
+        </div>
+
+        <div id="pogoda" class="pogoda" style="display:none;">
+            <div class="pogoda-item">
+                <img src="images/city.png" alt="Miasto" class="icon">
+                <h2 id="nazwa-miasta"></h2>
+            </div>
+            <div class="pogoda-item">
+                <img src="images/temperature.png" alt="Temperatura" class="icon">
+                <p id="temperatura"></p>
+            </div>
+            <div class="pogoda-item">
+                <img src="images/wind.png" alt="Wiatr" class="icon">
+                <p id="wiatr"></p>
+            </div>
+            <div class="pogoda-item">
+                <img src="images/humidity.png" alt="Wilgotność" class="icon">
+                <p id="wilgotnosc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </script>
+</body>
+</html>
