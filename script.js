@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/pogoda/service-worker.js')
+    navigator.serviceWorker.register('/sweaterweather/service-worker.js')
   }
 
 const apiKey = "7de9d5d5ddfda64e40d68815c9abfa80"; // Twój klucz API
