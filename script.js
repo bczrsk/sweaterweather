@@ -1,7 +1,3 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sweaterweather/service-worker.js')
-  }
-
 const apiKey = "7de9d5d5ddfda64e40d68815c9abfa80"; // Twój klucz API
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -31,3 +27,7 @@ async function CheckWeather(miasto) {
 function searchWeather() {
     const miasto = document.getElementById("miasto").value; // Pobranie miasta z inputu
     CheckWeather(miasto); // Wywołanie funkcji sprawdzającej pogodę
+
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sweaterweather/service-worker.js')
+  }
