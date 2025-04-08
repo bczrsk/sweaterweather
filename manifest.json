@@ -5,7 +5,7 @@
     "background_color": "#303030",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/",
+    "scope": "/sweaterweather/",
     "start_url": "/sweaterweather/",
     "icons": [
         {
